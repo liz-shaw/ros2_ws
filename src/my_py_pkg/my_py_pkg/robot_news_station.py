@@ -27,7 +27,7 @@ class RobotNewsStationNode(Node):
     def publish_news(self):
         # 这里的逻辑是定时器触发后要做的事
         msg = String()      # 创建一个空白的 String 消息对象
-        msg.data = "Hello, this is" + self.robot_name_+ "from the robot news station"  # 给消息填入内容 "Hello"
+        msg.data = "Hello, this is " + self.robot_name_+ " from the robot news station"  # 给消息填入内容 "Hello"
         self.publisher_.publish(msg) # 真正把消息发送出去
 
 
